@@ -1,0 +1,26 @@
+[   
+    {
+        "local": "Dubai",
+        "review": "4.5",
+        "country": "UAE",
+        "Description": "Dubai is a mesmerizing destination known for its ultramodern architecture, luxurious shopping, and vibrant nightlife. Experience the awe-inspiring Burj Khalifa, the world's tallest building, and explore the exotic Palm Jumeirah, an artificial archipelago. Whether you're lounging on pristine beaches, indulging in high-end dining, or enjoying thrilling desert safaris, Dubai promises an unforgettable adventure",
+        "Value": 2250.90,
+        "imagem": "https://media.istockphoto.com/id/154918211/pt/foto/cidade-de-dubai-burj-dubai.jpg?s=612x612&w=0&k=20&c=vhbv_5nlRtYrqecvBAk1zghtc0C2JyNec9xPYtRw40w="
+    },
+    {
+        "local": "Foz do Iguaçu",
+        "review": "4.8",
+        "country": "Paraná, Brazil",
+        "Description": "Foz do Iguaçu is a natural wonder, home to the spectacular Iguaçu Falls, one of the largest and most impressive waterfalls in the world. Located on the border between Brazil and Argentina, this stunning destination offers breathtaking views, lush rainforests, and a rich diversity of wildlife. Visitors can take boat tours to experience the power of the falls up close or explore the surrounding national parks.",
+        "Value": 1420.00,
+        "imagem": "https://media.istockphoto.com/id/183704704/pt/foto/barco-aproximar-cataratas-igua%C3%A7u.jpg?s=612x612&w=0&k=20&c=7mNL4jpgoOXo8dGFzvLrE1lxvpViz-q_x6_JSb5SVNY="
+    },
+    {
+        "local": "Los Angeles",
+        "review": "4.2",
+        "country": "California, USA",
+        "Description": "Los Angeles, the entertainment capital of the world, is a vibrant and diverse city known for its iconic Hollywood sign, beautiful beaches, and bustling cultural scene. Explore the glamorous streets of Beverly Hills, catch a show at the historic TCL Chinese Theatre, or relax on the sun-soaked shores of Santa Monica. With its endless array of attractions and sunny weather, LA is a must-visit for any traveler.",
+        "Value": 2680.50,
+        "imagem": "https://media.istockphoto.com/id/1065790316/pt/foto/los-angeles-golden-hour-cityscape-over-downtown-skyscrapers.jpg?s=612x612&w=0&k=20&c=vzKtL8PEIrpujnemmus5RGmL6utOPnBZTDqZ9XZWfFI="
+    }
+]

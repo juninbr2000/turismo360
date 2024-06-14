@@ -1,5 +1,29 @@
 const commentary = document.querySelectorAll('.commentary');
+const destinations = document.querySelector('.destinations');
+const modal = document.querySelector('.modal');
+const menubtn = document.querySelector('.menu');
+const menuList = document.querySelector('.menu-list')
 
+fetch('./destinations.json').then(res => res.json()).then(data => {
+    const locais = data
+    console.log(locais)
+    destinations.innerHTML += locais.map(local => `<div key=${local.local} class='card'>
+            <img src=${local.imagem} />
+            <div class='info-tr'>
+                <div>
+                    <h4>${local.local}</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>${local.country}</p>
+                </div>
+                <p><i class="fa-solid fa-star"></i>${local.review}</p>
+            </div>
+        </div>`).join('')
+        document.querySelectorAll('.card').forEach((card, index) => {
+            card.addEventListener('click', ()=> toogleModal(locais[index]))
+        })
+    })
+
+
+    
 let i = 1
 function prevCom() {
     commentary[i].classList.remove('active')
@@ -18,3 +42,49 @@ function nextCom() {
     }
     commentary[i].classList.add('active')
 }
+
+
+const toogleModal = (travel) => {
+    if(modal.classList.contains('modalActive')){
+        modal.classList.remove('modalActive')
+        modal.innerHTML = ''
+    } else {
+        modal.classList.add('modalActive')
+        openModal(travel)
+    }
+}
+
+
+function openModal(local){
+    if(modal.classList.contains('modalActive')){
+        modal.innerHTML += `<div class="modal-content">
+            <img src="${local.imagem}"/>
+            <div class='info-tr'>
+                <div>
+                    <h3>${local.local}</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>${local.country}</p>
+                </div>
+                <p><i class="fa-solid fa-star"></i>${local.review}</p>
+            </div>
+            <p class='description'>${local.Description}</p>
+            <div class='price'>
+                <h4>${local.Value.toLocaleString('en-US', {style: "currency", currency: "USD"})}</h4>
+                <div>
+                    <button class='secondary cancel'>Cancel</button>
+                    <button class='primary buy'><i class='fa-solid fa-cart-shopping'></i>Buy Now</button>
+                </div>
+            </div>
+        </div>`
+    }
+    document.querySelector('.cancel').addEventListener('click', ()=> toogleModal())
+}
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        toogleModal();
+    }
+});
+
+menubtn.addEventListener('click', () => {
+    menuList.classList.toggle('hidden')
+})
