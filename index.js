@@ -68,8 +68,9 @@ function openModal(local){
             </div>
             <p class='description'>${local.Description}</p>
             <div class='price'>
-                <h4>${local.Value.toLocaleString('en-US', {style: "currency", currency: "USD"})}</h4>
-                <div>
+                <h3>${local.Value.toLocaleString('en-US', {style: "currency", currency: "USD"})}</h3>
+                <p>10X of ${(local.Value / 10).toLocaleString('en-US', {style: 'currency', currency: 'USD'})}
+                <div class='modals-btn'>
                     <button class='secondary cancel'>Cancel</button>
                     <button class='primary buy'><i class='fa-solid fa-cart-shopping'></i>Buy Now</button>
                 </div>

@@ -4,7 +4,7 @@
     margin: 0;
 }
 body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 img{
     max-width: 100%;
@@ -327,7 +327,7 @@ label{
     text-align: center;
     width: 100%;
     background-color: #2f2f76;
-    padding: 8px;
+    padding: 8px 0;
     color: #ccc;
 }
 .modal{
@@ -336,7 +336,7 @@ label{
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 104vw;
+    width: 100vw;
     height: 105vh;
     z-index: 100;
     justify-content: center;
@@ -368,12 +368,20 @@ label{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
     padding: 0 20px;
-    & div {
+    & p{
+        color: #555;
+        font-style: italic;
+    }
+    & .modals-btn {
         display: flex;
-        justify-content: flex-end;
+        flex-grow: 1;
+        width: 100%;
+        justify-content: space-between;
         align-items: center;
-        gap: 5px;
+        margin-top: 10px;
     }
 }
 
