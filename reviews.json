@@ -1,0 +1,32 @@
+[
+    {
+    "name": "Fernanda Souza",
+    "rating": 5,
+    "review": "Simplesmente perfeita! A viagem foi toda planejada pela TTour e conseguimos curtir cada momento com nossos filhos sem nenhuma dor de cabeça.",
+    "img": "https://source.unsplash.com/random/100x100/?woman"
+    },
+    {
+    "name": "Carlos e Mariana Lima",
+    "rating": 4.5,
+    "review": "O atendimento foi excelente! Só demos 4.5 porque pegamos um dia de chuva no passeio, mas fora isso, tudo impecável.",
+    "img": "https://source.unsplash.com/random/100x100/?couple"
+    },
+    {
+    "name": "João Pedro Oliveira",
+    "rating": 4,
+    "review": "Ótimos roteiros, bem organizados. Minha esposa e minhas filhas adoraram o hotel com recreação infantil. Recomendo.",
+    "img": "https://source.unsplash.com/random/100x100/?man"
+    },
+    {
+    "name": "Lúcia Fernandes",
+    "rating": 5,
+    "review": "Foi a melhor experiência em família que já tivemos! Roteiro incrível, com passeios culturais e momentos de descanso.",
+    "img": "https://source.unsplash.com/random/100x100/?smiling-woman"
+    },
+    {
+    "name": "Renato e Família",
+    "rating": 4.8,
+    "review": "Ficamos impressionados com a organização e o carinho da equipe. O destino era lindo e o suporte da TTour fez toda a diferença.",
+    "img": "https://source.unsplash.com/random/100x100/?family"
+    }
+]

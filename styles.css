@@ -1,620 +1,163 @@
+:root{
+    --primary-color: #ff4400;
+    --text-color: #fefefe;
+    --bg-clear: #d1d1d1;
+}
+
+
 *{
-    font-family: "Montserrat", sans-serif;
     padding: 0;
     margin: 0;
+    border: none;
+    text-decoration: none;
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
 }
-::-webkit-scrollbar{
-    background-color: transparent;
-    width: 6px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #ccc;
-    border-radius: 10px;
-    opacity: .5;
-}
-body{
-    /* overflow-x: hidden; */
-}
+
 img{
-    max-width: 100%;
+    width: 100%;
 }
-nav{
-    display: flex;
-    padding: 10px 20px;
-    justify-content: space-between;
-    background-color: #fff;
-    z-index: 1;
-    & h1 a{
-        text-decoration: none;
-        color: #000;
-    }
-}
-.top-header{
-    background-image: url('https://images.unsplash.com/photo-1488085061387-422e29b40080?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D');
-    background-size: cover;
-    background-position: top right -160px;
-    background-repeat: no-repeat;
-    height: 50vh;
-    border-radius: 0 0 20px 20px;
-    padding: 30px 20px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-direction: column;
-    color: #fefefe;
-    text-shadow: 2px 3px 5px #000;
-}
-.menu{
-    padding: 5px 15px;
-    border: none;
-    border-radius: 20px;
-}
-.menu-list{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #ccc;
-    width: calc(100% - 40px);
-    left: 0;
-    list-style: none;
-    padding: 15px 20px;
-    top: 50px;
-    text-align: center;
-    border-radius: 0 0 20px 20px;
-    transition: all .5s ease;
-    z-index: 3;
-    & li a{
-        border-bottom: 1px solid;
-        color: #000;
-        font-weight: 700;
-        text-decoration: none;
-        display: block;
-        padding: 8px 10px;
-    }
-}
-.hidden{
-    top: -300px;
-    height: 0;
-    opacity: 0;
-}
+
 .primary{
-    padding: 10px 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 20px;
-    background-color: #34349a;
-    color: #fff;
-    border: none;
-    letter-spacing: 2px;
-}
-.secondary{
-    padding: 10px 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 20px;
-    background-color: #777;
-    color: #fff;
-    border: none;
-    letter-spacing: 2px;
-}
-.partner{
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
+    background-color: var(--primary-color);
     padding: 10px 20px;
-}
-.social-area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    & div{
-        border: 1px solid #777;
-        border-radius: 20px;
-        padding: 5px 10px;
-        width: 45%;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10px;
-        & a{
-            color: #777;
-        }
-    }
-}
-.logos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    margin-top: 30px;
-    font-weight: bold;
-    color: #999;
-    gap: 5px;
-}
-.section-title{
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--text-color);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 1px solid;
-    padding: 5px 10px;
-    margin-bottom: 20px;
-    font-size: 20px;
+    display: block;
 }
-.destinations{
-    padding: 10px 20px;
-    margin-top: 20px;
-}
-.card{
-    border-radius: 10px;
-    background-color: #eee;
-    box-shadow: 2px 4px 20px #00000050;
-    margin-bottom: 25px;
-    cursor: pointer;
-    & img{
-        border-radius: 10px 10px 0 0;
-    }
-}
-.info-tr{
-    display: flex;
-    padding: 15px 20px;
-    justify-content: space-between;
-    align-items: center;
-    & p{
-        background-color: #34349a;
-        padding: 5px 10px;
-        border-radius: 10px;
-        color: #fefefe;
-    }
-    & div p{
-        color: #555;
-        background-color: transparent;
-        padding: 5px 0;
+
+.logo{
+    & span{
+        color: var(--primary-color);
     }
 }
 
-.informative{
-    padding: 10px 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.description{
+.section_title{
+    text-transform: uppercase;
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 1.7rem;
     margin-bottom: 30px;
 }
-.card-info{
+
+strong{
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Nav */
+.nav_top{
+    position: fixed;
+    padding: 30px 35px;
+    background-color: #fefefe;
+    box-shadow: 1px 3px 20px #00000025;
+    width: 100vw;
+    z-index: 4;
+}
+.nav_top .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_menu{
+    font-size: 20px;
+    background-color: var(--bg-clear);
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.menu_list{
+    position: absolute;
+    top: 100px;
+    background-color: #fefefe;
+    padding: 20px 15px;
+    list-style: none;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 1px 3px 20px #00000025;
+}
+.menu_list li a{
+    color: #3c3c3c;
+    padding: 20px;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    transition: all .3s ease;
+}
+.menu_list li a:hover{
+    background-color: #e1e1e1;
+}
+
+.ocult{
+    top: -1000px;
+    opacity: 0;
+}
+
+
+/* Header */
+
+.header_top{
+    padding: 150px 35px 10px;
+    background-image: linear-gradient(345deg, #ffa600, var(--primary-color) 40%, #fefefe 40%);
+    position: relative;
+    height: 650px;
+}
+
+.header_top .container{
     display: flex;
     flex-direction: column;
-    height: 320px;
-    padding: 5px 20px;
+    justify-content: space-between;
+    height: 100%;
+    gap: 30px;
+    box-sizing: border-box;
 }
-.card-expansive{
-    height: 60px;
-    transition: all .3s ease;
-    background-color: #ccc;
-    margin-bottom: -10px;
+.info_txt{
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    padding: 20px 20px;
-    border-radius: 20px 20px 0 0;
-    box-shadow: 2px 0px 10px #00000025;
-    font-weight: 500;
-    & div{
-        background-color: #ccc;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 12px;
-        border-radius: 20px;
-    }
+    gap: 35px;
 }
-.card-expansive:hover{
-    height: 120px;
-}
-.date:hover, .pay:hover{
-    background-color: #56a95c;
-}
-.travel{
-    flex-grow: 1;
-    background-color: #34349a;
-}
-
-
-.clients-review{
-    padding: 10px 20px;
-    position: relative;
-}
-.buttons{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: calc(100% - 60px);
-    top: 120px;
-    left: 30px;
-    & button{
-        padding: 10px;
-        background-color: #34349a;
-        color: #fff;
-        border-radius: 30px;
-        border: none;
-    }
-}
-.commentary{
-    display: none;
-}
-.active{
-    display: block;
-    padding: 10px 50px;
-    background-image: linear-gradient(45deg, #eaeaea, #7575a1);
-    border-radius: 10px;
-    & h4{
-        font-style: italic;
-        border-bottom: 1px solid;
-        margin-bottom: 10px;
-    }
-}
-.contact-us{
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    padding: 15px 20px;
-    border-radius: 5px;
-    background-color: #ccc;
-    & .form{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    & .form i{
-        text-align: center;
-        padding: 18px;
-        font-size: 20px;
-        background-color: #34349a;
-        border-radius: 30px;
-        align-self: center;
-        margin-bottom: 20px;
-    }
-    & .description{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    & .primary{
-        margin-top: 15px;
-    }
-}
-label{
-    display: flex;
-    flex-direction: column;
-    & span{
-        margin-top: 15px;
-        margin-bottom: 5px;
-    }
-    & input, textarea{
-        font-size: 18px;
-        resize: none;
-        border: none;
-        border-bottom: 1px solid #000;
-        padding: 3px 5px;
+.image_header{
+    box-sizing: border-box;
+    & img{
+       position: absolute; 
+       left: 0;
+       bottom: -30px;
     }
 }
 
-.footer{
-    padding: 25px 20px;
-    background-color: #34349a;
-    margin-top: 20px;
-    color: #fff;
-    & h1{
-        color: #000;
-    }
-    & .description{
-        text-align: center;
-    }
+
+/* Section 1 */
+#about{
+    
 }
-.fotter-social{
-    background-color: #2f2f76;
+#about .container{
+    padding: 80px 30px;
     display: flex;
-    padding: 10px 20px;
-    justify-content: space-around;
-    margin: 10px auto;
-    border-radius: 5px;
+    flex-direction: column;
 }
-.fotter-social a{
-    font-size: 35px;
-    color: #cdcdcd;
-}
-.links h2{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    padding: 5px 10px;
-    border-bottom: 1px solid ;
-}
-.direitos{
+
+.section_text{
     text-align: center;
-    width: 100%;
-    background-color: #2f2f76;
-    padding: 8px 0;
-    color: #ccc;
-}
-.modal{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100vw;
-    height: 105vh;
-    z-index: 100;
-    justify-content: center;
-    align-items: center;
-}
-
-.modalActive {
-    display: flex;
-}
-.modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 500px;
-    width: 90%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-height: 90vh;
-    overflow-y:scroll;
-    & .description{
-        font-size: 14px;
-        border-left: 2px solid #34349a;
-        padding-left: 5px;
-    }
-}
-
-.modal-content img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-.price{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0 20px;
     & p{
-        color: #555;
-        font-style: italic;
+        margin-bottom: 25px;
+        font-size: 1rem;
     }
-    & .modals-btn {
-        display: flex;
-        flex-grow: 1;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
+}
+.section_image{
+    background-color: #ffffff;
+    box-shadow: 1px 3px 20px #00000025;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+    transform: rotate(5deg);
+    & h3{
+        font-weight: 500;
+        color: #3c3c3c;
         margin-top: 10px;
-    }
-}
-
-@media screen and (min-width: 481px){
-    nav{
-        padding: 25px 40px;
-    }
-    .menu-list{
-        top: 70px;
-    }
-    .hidden{
-        top: -300px;
-        background-color: #ccc;
-        opacity: 0;
-    }
-    .top-header{
-        padding: 30px 40px;
-        background-position: center;
-        background-image: url('https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-        align-items: flex-end;
-        height: 450px;
-    }
-    .partner{
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .social-area{
-        align-items: flex-start;
-        & .social-links i{
-            font-size: 30px;
-            margin-left: 10px;
-            
-        }
-        .social-links{
-            width: 100%;
-        }
-    }
-    .logos{
-        font-size: 30px;
-    }
-    .destinations{
-        padding: 20px 40px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        & .section-title{
-            width: 100%;
-            flex-grow: 1;
-        }
-        & .card{
-            max-width: 250px;
-            & .info-tr div{
-                flex-grow: 1;
-            }
-        }
-    }
-    .informative{
-        padding: 20px 40px;
-    }
-    .card-info{
-        flex-direction: row;
-        height: 140px;
-        justify-content: space-between;
-        align-items: flex-end;
-        & .card-expansive{
-            width: 28%;
-        }
-    }
-    .travel{
-        height: 120px;
-    }
-    .clients-review{
-        padding: 20px 40px;
-        & .buttons{
-            top: 110px;
-            width: calc(100% - 100px);
-            left: 50px;
-        }
-        & .commentary{
-            padding: 20px 60px;
-        }
-    }
-    .contact-us{
-        padding: 25px 40px;
-    }
-    form{
-        padding: 15px 40px;
-    }
-    .footer{padding: 25px 40px;}
-    .direitos{
-        max-width: calc(100% - 15px);
-        margin: 0 auto;
-    }
-    .modal{
-        height: 100vh;
-        width: 100vw;
-    }
-}
-@media screen and (min-width: 880px) {
-    nav{
-        padding: 30px 60px;
-        max-width: 1220px;
-        margin: 0 auto;
-    }
-    .menu{
-        display: none;
-    }
-    .menu-list{
-        display: flex;
-        flex-direction: row;
-        position: static;
-        justify-content: flex-end;
-        background-color: transparent;
-        top: 0;
-        right: 0;
-        width: 50%;
-        padding: 0;
-        & li a{
-            display: inline-block;
-            border-bottom: none;
-            border-right: 1px solid;
-            padding: 8px 20px;
-        }
-        & li a:hover{
-            background-color: #ddd;
-        }
-    }
-    .hidden{
-        opacity: 1;
-        height: 100%;
-        top: 0;
-    }
-    .top-header{
-        padding: 25px 60px;
-        max-width: 1220px;
-        margin: 0 auto;
-        height: 500px;
-    }
-    .partner{
-        padding: 25px 60px;
-        max-width: 1220px;
-        margin: 30px auto
-    }
-    .destinations{
-        padding: 20px 60px;
-        max-width: 1220px;
-        margin: 0 auto;
-        justify-content: center;
-        gap: 25px;
-        & .card{
-            max-width: 320px;
-        }
-    }
-    .informative{
-        padding: 20px 60px;
-        max-width: 1220px;
-        margin: 0 auto;
-    }
-    .card-info{
-        padding: 10px 60px;
-    }
-    .clients-review{
-        padding: 20px 60px;
-        max-width: 1220px;
-        margin: 10px auto;
-        & .commentary{
-            max-width: 1000px;
-            margin: auto;
-        }
-        & .buttons{
-            width: calc(100% - 140px);
-            left: 70px;
-        }
-    }
-    .contact-us{
-        max-width: 1220px;
-        padding: 20px 60px;
-        margin: 0 auto;
-    }
-    form{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        & .form{
-            width: 45%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        & .inputs{
-            width: 45%;
-        }
-    }
-    footer{
-        max-width: 1220px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        & h1{
-            width: 100%;
-            text-align: center;
-            flex-grow: 1;
-            margin-bottom: 50px;
-        }
-        .metade{
-            width: 45%;
-        }
-        .links{
-            width: 45%;
-        }
-    }
-    .direitos{
-        max-width: 1220px;
-        padding: 25px 40px;
-        margin: 0 auto;
-    }
-    .modal{
-        height: 100vh;
-        width: 100vw;
     }
 }

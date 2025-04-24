@@ -7,130 +7,133 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/baa7dffef8.js" crossorigin="anonymous"></script>
-    <title>Turismo360</title>
+    <title>TTour</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <h1><a href="#"><i class="fa-solid fa-globe"></i>Turismo360</a></h1>
-            <button class="menu"><i class="fa-solid fa-bars"></i></button>
-            <ul class="menu-list hidden">
-                <li><a href="#">Destination</a></li>
-                <li><a href="#">About-us</a></li>
-                <li><a href="#">Us Terms</a></li>
-                <li><a href="#">Support</a></li>
+    <nav class="nav_top">
+        <div class="container">
+            <h1 class="logo">
+                <span>T</span>Tour
+            </h1>
+            
+            <button class="btn_menu"><i class="fa-solid fa-bars"></i></button>
+            
+            <ul class="menu_list ocult">
+                <li><a href="#home"><i class="fa-solid fa-home"></i> Home</a></li>
+                <li><a href="#aboult"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                <li><a href="#destinations"><i class="fa-solid fa-plane"></i> Destinations</a></li>
+                <li><a href="#reviews"><i class="fa-solid fa-star"></i> Reviews</a></li>
             </ul>
-        </nav>
-        <header class="top-header">
-            <h2>Millions of destinations waiting for you</h2>
-
-            <button class="primary">Know the destinations <i class="fa-solid fa-arrow-right"></i></button>
-        </header>
-        <section class="partner">
-            <div class="social-area">
-                <p class="social">Follow us on social media</p>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="logos">
-                <i class="fa-brands fa-airbnb"></i>
-                <p>Airbnb</p>
-            </div>
-        </section>
-        <section class="destinations">
-            <h2 class="section-title">Popular Destinations</h2>
-        </section>
-        <section class="informative">
-            <h2 class="section-title">The easiest way to make your dreams come true</h2>
-            <p class="description">All you need to do is choose where and when, and we take care of the rest!</p>
-            <div class="card-info">
-                <div class="card-expansive date">
-                    <div><i class="fa-solid fa-location-dot"></i></div>
-                    <p>chosse your destination and the date</p>
-                </div>
-                <div class="card-expansive travel">
-                    <div><i class="fa-solid fa-plane"></i></div>
-                    <p>verify the informations</p>
-                </div>
-                <div class="card-expansive pay">
-                    <div><i class="fa-solid fa-coins"></i></div>
-                    <p>Pay and enjoy the journey</p>
-                </div>
-            </div>
-        </section>
-        <section class="clients-review">
-            <h2 class="section-title">Ours Custumers review</h2>
-            <div class="buttons">
-                <button onclick="prevCom()"><i class="fa-solid fa-arrow-left"></i></button>
-                <button onclick="nextCom()"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="commentary">
-                <h4>Jhenifer H.</h4>
-                <p>Turismo360 offered a comprehensive travel experience. We felt well taken care of from start to finish. Highly recommend!</p>
-            </div>
-            <div class="commentary active">
-                <h4>Miranda B.</h4>
-                <p>We had a fantastic trip thanks to Turismo360. Their all-encompassing approach made our vacation smooth and enjoyable</p>
-            </div>
-            <div class="commentary">
-                <h4>George L.</h4>
-                <p>Turismo360's service is exceptional. They think of everything, ensuring a hassle-free and memorable travel experience.</p>
-            </div>
-        </section>
-        <section class="contact-us">
-            <h2 class="section-title">Know the news</h2>
-            <form action="#">
-                <div class="form">
-                    <i class="fa-solid fa-bullhorn"></i>
-                    <p class="description">
-                        Recive the best promotion and the better destination with the better price
-                    </p>
-                </div>
-                <div class="inputs">
-                    <label>
-                        <span><i class="fa-solid fa-user"></i> Name:</span>
-                        <input type="email" placeholder="Your complete name">
-                    </label>
-                    <label>
-                        <span><i class="fa-solid fa-envelope"></i> Email:</span>
-                        <input type="email" placeholder="type your email here">
-                    </label>
-                    <label>
-                        <span>Message:</span>
-                        <textarea name="text"></textarea>
-                    </label>
-                    <button class="primary">Submit</button>
-                </div>
-            </form>
-        </section>
-        <footer  class='footer'>
-            <h1><i class="fa-solid fa-globe"></i>Turismo360</h1>
-            <div class="metade">
-                <div class="fotter-social">
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, qui animi nulla dignissimos molestias laboriosam illum dolore laborum commodi iure necessitatibus quae sequi temporibus porro ipsam! Placeat perferendis et culpa.</p>
-                </div>
-            </div>
-            <div class="links">
-                <h2>Support <i class="fa-solid fa-arrow-right"></i></h2>
-                <h2>About-us <i class="fa-solid fa-arrow-right"></i></h2>
-                <h2>Destinations <i class="fa-solid fa-arrow-right"></i></h2>
-            </div>
-        </footer>
-        <div class="direitos">
-                <p>Turismo360 &copy; 2024</p>
         </div>
+    </nav>
 
-    </div>
-    <div class="modal"></div>
+    <header class="header_top">
+        <div class="container">
+
+            <div class="info_txt">
+                <div class="text">
+                    <h1 class="logo">
+                        <span>T</span>Tour
+                    </h1>
+                    <h2>Your <strong>family</strong> deserves to travel <strong>more and better.</strong></h2>
+                </div>
+                
+                <div class="buttons_header">
+                    <a href="#destinations" class="primary">Know our destinations <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="image_header">
+                <img src="./assets/Plane.png" alt="plane">
+            </div>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+
+            <h1 class="section_title">About Us</h1>
+            
+            <div class="section_text">
+                
+                <p>At TTour, we think that the best memories are those made with family. We are a tourism agency specialized in creating unique and safe experiences for all ages — because traveling together is much more than discovering new places, it is about collecting special moments.</p>
+                
+                <p>Our commitment is to transform each trip into an unforgettable story. We take care of every detail with care: from personalized planning, to choosing the best hotels and tours, to support throughout the journey. Everything so that you and your family can make the most of your trip, worry-free.</p>
+                
+                <p>With an experienced team passionate about tourism, TTour offers complete packages, national and international destinations, and tailor-made itineraries for vacations, holidays or that weekend getaway.</p>
+                
+            </div>
+            <div class="section_image">
+                <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2023/03/Indian-Holiday.jpg" alt="family takin a picture">
+                <h3>TTour — Your family deserves to travel more and better.</h3>
+            </div>
+        </div>
+    </section>
+
+    <main id="destination">
+        <div class="container">
+
+            <h1 class="section_title">favorite destinations</h1>
+            <div class="destinations_container">
+                
+            </div>
+        </div>
+    </main>
+
+    <section id="choose">
+        <div class="container">
+
+            <h1 class="section_title">choose your next destination</h1>
+            
+            <form action="#">
+                <label class="lael_input">
+                    <span>Name: </span>
+                    <input type="text" placeholder="type your name">
+                </label>
+                
+                <label class="lael_input">
+                    <span>Email: </span>
+                    <input type="email" placeholder="type your email">
+                </label>
+                
+                <div class="">
+                    <label class="lael_input">
+                        <span>From: </span>
+                        <input type="text" placeholder="where do you want to start from?">
+                    </label>
+                    
+                    <label class="lael_input">
+                        <span>To: </span>
+                        <input type="text" placeholder="where do you want to go?">
+                    </label>
+                    
+                    <label class="lael_input">
+                        <span>when: </span>
+                        <input type="date">
+                    </label>
+                </div>
+                
+                <button class="primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+
+            <h1 class="section_title">see what our customers say</h1>
+            
+            <div class="review_container">
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
