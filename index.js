@@ -11,7 +11,7 @@ async function fetchDestination() {
         console.log(data)
 
         if (data) {
-            $destination.innerHTML += data.map(local => `<div class="destination-card">
+            $destination.innerHTML += data.map(local => `<div class="destination-card" data-aos="fade-up">
                 <img src='${local.imagem}' class="destination-image" />
                 <div class='destination-header'>
                     <h1 class="destination-title">${local.local}</h1>
