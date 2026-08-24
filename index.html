@@ -1,163 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/baa7dffef8.js" crossorigin="anonymous"></script>
-    <title>TTour</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav class="nav_top">
-        <div class="container">
-            <h1 class="logo">
-                <span>T</span>Tour
-            </h1>
-            
-            <button class="btn_menu"><i class="fa-solid fa-bars"></i></button>
-            
-            <ul class="menu_list ocult">
-                <li><a href="#home"><i class="fa-solid fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
-                <li><a href="#destination"><i class="fa-solid fa-plane"></i> Destinations</a></li>
-                <li><a href="#reviews"><i class="fa-solid fa-star"></i> Reviews</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="header_top">
-        <div class="container">
-
-            <div class="info_txt">
-                <div class="text">
-                    <h1 class="logo">
-                        <span>T</span>Tour
-                    </h1>
-                    <h2>Your <strong>family</strong> deserves to travel <strong>more and better.</strong></h2>
-                </div>
-                
-                <div class="buttons_header">
-                    <a href="#destinations" class="primary">Know our destinations <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="image_header">
-                <img src="./assets/Plane.png" alt="plane">
-            </div>
-        </div>
-    </header>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-    <section id="about">
-        <div class="container">
-
-            <h1 class="section_title">About Us</h1>
-            
-            <div class="section_text">
-                
-                <p data-aos="fade-right">At TTour, we think that the best memories are those made with family. We are a tourism agency specialized in creating unique and safe experiences for all ages — because traveling together is much more than discovering new places, it is about collecting special moments.</p>
-                
-                <p data-aos="fade-right">Our commitment is to transform each trip into an unforgettable story. We take care of every detail with care: from personalized planning, to choosing the best hotels and tours, to support throughout the journey. Everything so that you and your family can make the most of your trip, worry-free.</p>
-                
-                <p data-aos="fade-right">With an experienced team passionate about tourism, TTour offers complete packages, national and international destinations, and tailor-made itineraries for vacations, holidays or that weekend getaway.</p>
-                
-            </div>
-            <div class="section_image" >
-                <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2023/03/Indian-Holiday.jpg" alt="family takin a picture">
-                <h3>TTour — Your family deserves to travel more and better.</h3>
-            </div>
-        </div>
-    </section>
-
-    <main id="destination">
-        <div class="container">
-
-            <h1 class="section_title clear">favorite destinations</h1>
-            <div id="destinations_container">
-                
-            </div>
-        </div>
-    </main>
-
-    <section id="choose">
-        <div class="container">
-
-            <h1 class="section_title">choose your next destination</h1>
-            
-            <form action="#" class="form_sec">
-                <label class="label_input">
-                    <span>Name: </span>
-                    <input type="text" placeholder="type your name">
-                </label>
-                
-                <label class="label_input">
-                    <span>Email: </span>
-                    <input type="email" placeholder="type your email">
-                </label>
-                
-                <div class="">
-                    <label class="label_input">
-                        <span>From: </span>
-                        <input type="text" placeholder="where do you want to start from?">
-                    </label>
-                    
-                    <label class="label_input">
-                        <span>To: </span>
-                        <input type="text" placeholder="where do you want to go?">
-                    </label>
-                    
-                    <label class="label_input">
-                        <span>when: </span>
-                        <input type="date">
-                    </label>
-                </div>
-                
-                <button class="primary">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <section id="reviews">
-        <div class="container">
-
-            <h1 class="section_title">see what our customers say</h1>
-            
-            <div id="review_container">
-                
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <h2 class='logo'><span>T</span>Tout</h2>
-            <div class="footer_social">
-                <h3 class="section_title">Our Social Midia</h3>
-                <div class="social_cont">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#destination">Destination</a>
-                <a href="#reviews">Reviews</a>
-            </div>
-            <div class="info">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maiores voluptatibus reprehenderit eum nemo vero distinctio iure eligendi placeat, cupiditate sed, mollitia sunt, natus neque quae fuga aperiam ad possimus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ratione nemo quod sed recusandae cupiditate explicabo officiis quisquam dolorum itaque, vel quia, tempore repudiandae ut corporis fuga. Quod, harum eveniet.</p>
-            </div>
-            <p>TTour&copy;2025</p>
-        </div>
-    </footer>
-    <script src="index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+    <title>UniTour</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
