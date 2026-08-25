@@ -10,7 +10,7 @@ interface ButtonProps {
 
 function Button({text, icon, variant, action, disabled}: ButtonProps) {
   return (
-    <button onClick={action} disabled={disabled}>{text}</button>
+    <button onClick={action} className={`button ${variant}`} disabled={disabled}>{text} {icon}</button>
   )
 }
 

@@ -1,6 +1,24 @@
 :root{
   --bg-color: #ffffff;
   --main-color: #ff8800;
-  --dark-colot: #252823;
+  --dark-color: #252823;
   --gray-color: #b5b5b5;
+}
+
+.button{
+  padding: 10px 32px;
+  display: flex;
+  align-items: center;
+  gap: .75em;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.dark{
+  background-color: var(--dark-color);
+  color: var(--bg-color);
+}
+.orange{
+  background-color: var(--main-color);
+  color: var(--bg-color);
 }
