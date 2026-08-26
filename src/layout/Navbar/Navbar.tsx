@@ -20,12 +20,12 @@ function Navbar() {
     const tl = useRef<gsap.core.Timeline | null>(null)
 
     useGSAP(() => {
-        if (!menuRef.current) return
-
+        
         const mm = gsap.matchMedia()
-
+        
         mm.add("(max-width: 768px)", () => {
-
+            if (!menuRef.current) return
+            
             const items = gsap.utils.toArray<HTMLElement>(
                 menuRef.current.children
             )
@@ -75,7 +75,7 @@ function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-        <a className={styles.logo} href='/'><span>Uni</span>Tour</a>
+        <a className={styles.logo} href='/' translate='no'><span>Uni</span>Tour</a>
 
         <button className={styles.menu_btn} onClick={toggleMenu}>{active ? <MdClose /> : <MdMenu/>}</button>
 

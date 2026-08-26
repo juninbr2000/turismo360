@@ -31,6 +31,20 @@ function Header() {
         </div>
 
       </div>
+
+      <div className={styles.floating_card}>
+        <div className={styles.close}>
+          <MdClose />
+        </div>
+        <div>
+          <p className={styles.field}>Destination</p>
+          <p className='text_orange destaque'>Your Dream</p>
+        </div>
+        <div>
+          <p className={styles.field}>Departure</p>
+          <p className='text_orange destaque'>Now</p>
+        </div>
+      </div>
     </header>
   )
 }
