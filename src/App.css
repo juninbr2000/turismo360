@@ -3,15 +3,18 @@
   --main-color: #ff8800;
   --dark-color: #252823;
   --gray-color: #b5b5b5;
+  --gray-text: #949494;
 }
 
 .button{
-  padding: 10px 32px;
+  padding: 12px 32px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: .75em;
   border-radius: 30px;
   font-weight: 600;
+  font-size: 1em;
 }
 
 .dark{
@@ -20,5 +23,16 @@
 }
 .orange{
   background-color: var(--main-color);
+  text-align: center;
   color: var(--bg-color);
+}
+
+.destaque{
+  font-family: 'doto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.text_orange{
+  color: var(--main-color);
 }

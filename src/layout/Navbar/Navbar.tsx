@@ -22,31 +22,40 @@ function Navbar() {
     useGSAP(() => {
         if (!menuRef.current) return
 
-        const items = gsap.utils.toArray<HTMLElement>(
-            menuRef.current.children
-        )
+        const mm = gsap.matchMedia()
 
-        tl.current = gsap.timeline({ paused: true })
+        mm.add("(max-width: 768px)", () => {
 
-        tl.current
-        .from(menuRef.current, {
-            opacity: 0,
-            x: -100,
-            duration: 0.4,
-            ease: "power2.out",
-        })
-        .from(
-            items,
-            {
+            const items = gsap.utils.toArray<HTMLElement>(
+                menuRef.current.children
+            )
+
+            tl.current = gsap.timeline({ paused: true })
+
+            tl.current
+            .from(menuRef.current, {
                 opacity: 0,
-                x: -30,
+                x: -100,
                 duration: 0.4,
-                stagger: 0.06,
                 ease: "power2.out",
-            },
-            "-=0.2"
-        )
+            })
+            .from(
+                items,
+                {
+                    opacity: 0,
+                    x: -30,
+                    duration: 0.4,
+                    stagger: 0.06,
+                    ease: "power2.out",
+                },
+                "-=0.2"
+            )
+        })
+
+        return () => mm.revert()
+
     }, { scope: menuRef })
+    
 
     const toggleMenu = () => {
         if (!tl.current) return
