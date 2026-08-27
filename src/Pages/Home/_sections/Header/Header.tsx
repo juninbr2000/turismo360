@@ -1,4 +1,3 @@
-import React from 'react'
 import { MdArrowForward, MdClose, MdStar } from 'react-icons/md'
 import styles from './Header.module.css'
 import Button from '../../../../Components/Button/Button'

@@ -58,3 +58,12 @@
         width: 45%;
     }
 }
+
+@media screen and (min-width: 1480px){
+    .container img{
+        max-width: 1480px;
+        border-radius: 30px;
+        display: block;
+        margin: 0 auto;
+    }
+}
