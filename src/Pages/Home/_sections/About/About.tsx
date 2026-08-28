@@ -31,6 +31,23 @@ function About() {
             })
         })
 
+        mm.add('(min-width: 1481px)', () => {
+             if(!imgRef.current || !sectionRef.current) return
+
+            gsap.from(imgRef.current, {
+                borderRadius: 0,
+                scale: 1.01,
+                scrollTrigger: {
+                    trigger: imgRef.current,
+                    markers: false,
+                    start: 'top 90%',
+                    end: 'center 75%',
+                    scrub: 0.8
+                }
+            })
+        })
+
+
         return () => mm.revert()
     }, {scope: sectionRef})
 
