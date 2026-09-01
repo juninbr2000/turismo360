@@ -1,4 +1,4 @@
-import React from 'react'
+
 import styles from './MainDestinations.module.css'
 import { MdLocationPin } from 'react-icons/md'
 

@@ -70,6 +70,24 @@
         width: 20%;
         max-width: 480px;
     }
+    .float{
+        background-color: var(--bg-color);
+        padding: 20px;
+        border-radius: 24px;
+        display: flex;
+        margin-right: 40px;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 1em;
+    }
+    .items p:first-child{
+        font-size: 1.25em;
+        color: var(--main-color);
+        font-weight: 600;
+    }
     .container{
         display: flex;
         justify-content: center;

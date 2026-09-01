@@ -1,8 +1,8 @@
-import React from 'react'
 import Header from './_sections/Header/Header'
 import About from './_sections/About/About'
 import MainDestinations from './_sections/MainDestinations/MainDestinations'
 import Works from './_sections/Works/Works'
+import Form from './_sections/Form/Form'
 
 function Home() {
   return (
@@ -11,6 +11,7 @@ function Home() {
       <About />
       <MainDestinations />
       <Works />
+      <Form />
     </div>
   )
 }

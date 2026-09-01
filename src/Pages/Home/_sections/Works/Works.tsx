@@ -1,14 +1,24 @@
-import React from 'react'
 
 import { BsClipboardCheck } from 'react-icons/bs'
 import { IoAirplaneOutline, IoCalendarOutline, IoLocationOutline } from 'react-icons/io5'
+import image from '../../../../assets/track.png'
 
 import styles from './Works.module.css'
 
 function Works() {
     return (
         <div className={styles.container}>
-            <div className={styles.media_side}></div>
+            <div className={styles.media_side}>
+                <div className={styles.float}>
+                    <img src={image} /> 
+                    <div className={styles.items}>
+                        <p>Choose</p>
+                        <p>Plan</p>
+                        <p>Itinerary</p>
+                        <p>Experience</p>
+                    </div>
+                </div>
+            </div>
             <div className={styles.info_content}>
                 <h2 className={styles.section_title}>How it works?</h2>
                 <p className={styles.sub_text}>Plan your next adventure.</p>

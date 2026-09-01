@@ -26,6 +26,11 @@
   text-align: center;
   color: var(--bg-color);
 }
+.transparent{
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border: 2px solid;
+}
 
 .destaque{
   font-family: 'doto', sans-serif;
