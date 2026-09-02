@@ -1,6 +1,7 @@
 .container{
     background-image: url('/public/Plane.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     padding: 3em 1.25em;
     display: flex;
@@ -28,6 +29,15 @@
 }
 
 @media screen and (min-width: 768px) {
+    .container{
+        padding: 40px;
+    }
+    .section_title{
+        font-size: 2.5em;
+    }
+    .form_container{
+        padding: 40px 30px;
+    }
     .shared{
         flex-direction: row;
         justify-content: space-between;

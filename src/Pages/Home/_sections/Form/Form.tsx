@@ -16,7 +16,7 @@ function Form() {
   return (
     <div className={styles.container}>
         <div className={styles.form_container}>
-            <h2>Where are you going next?</h2>
+            <h2 className={styles.section_title}>Where are you going next?</h2>
 
             <div className={styles.inputs}>
                 <div className={styles.shared}>
