@@ -18,7 +18,7 @@ function About() {
         mm.add('(max-width: 1480px)', () => {
             if(!imgRef.current || !sectionRef.current) return
 
-            gsap.from(imgRef.current, {
+            gsap.from(imgRef.current , {
                 borderRadius: 30,
                 scale: 0.9,
                 scrollTrigger: {

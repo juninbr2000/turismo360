@@ -4,8 +4,35 @@ import { IoAirplaneOutline, IoCalendarOutline, IoLocationOutline } from 'react-i
 import image from '../../../../assets/track.png'
 
 import styles from './Works.module.css'
+import { useRef } from 'react'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+
+gsap.registerPlugin(ScrollTrigger)
 
 function Works() {
+
+    const containerRef = useRef<HTMLDivElement>(null)
+
+    useGSAP(() => {
+        if(!containerRef.current) return
+
+        gsap.from(containerRef.current.children, {
+            y: 20,
+            opacity: 0,
+            scale: 0.75,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: containerRef.current,
+                markers: false,
+                start: '10% 50%',
+                end: '70% 70%',
+                scrub: 0.8
+            }
+        })
+    }, {scope: containerRef})
+
     return (
         <div className={styles.container}>
             <div className={styles.media_side}>
@@ -23,7 +50,7 @@ function Works() {
                 <h2 className={styles.section_title}>How it works?</h2>
                 <p className={styles.sub_text}>Plan your next adventure.</p>
 
-                <div className={styles.card_container}>
+                <div className={styles.card_container} ref={containerRef}>
                     <div className={styles.card_item}>
                         <span className={styles.icon}><IoLocationOutline /></span>
                         <h3 className={styles.card_title}>Choose</h3>
